@@ -44,7 +44,7 @@ plugins = [
   "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@develop",
   "statsmodels",
   "labfolder_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@8091734ddd4bdf9eb70247674b8888ccb0128101",
-  "cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin"]
+  "cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@21f4ba8c0fabebc78ccba1a43af5e4020388a59a"]
 
 jupyter = []
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
