@@ -948,7 +948,7 @@ dependencies = [
 [[package]]
 name = "cpfs-synthesis"
 version = "0.1.0"
-source = { git = "https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin?rev=c2307414bf11e8cc7b6b5f647962da559da65632#c2307414bf11e8cc7b6b5f647962da559da65632" }
+source = { git = "https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin?rev=3d2a2b4817c899415bb7ad2a5c337033479de4b8#3d2a2b4817c899415bb7ad2a5c337033479de4b8" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
@@ -3685,7 +3685,7 @@ plugins = [
 [package.metadata]
 requires-dist = [
     { name = "cpfs-ppms", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin?rev=0e9934c9b5c768b97038f5dd9719e279945d8203#0e9934c9b5c768b97038f5dd9719e279945d8203" },
-    { name = "cpfs-synthesis", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin?rev=c2307414bf11e8cc7b6b5f647962da559da65632#c2307414bf11e8cc7b6b5f647962da559da65632" },
+    { name = "cpfs-synthesis", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin?rev=3d2a2b4817c899415bb7ad2a5c337033479de4b8#3d2a2b4817c899415bb7ad2a5c337033479de4b8" },
     { name = "eelsdbconverter", marker = "extra == 'plugins'", git = "https://github.com/nomad-coe/nomad-parser-eelsdb.git?rev=entry-point" },
     { name = "labfolder-plugin", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin?rev=8091734ddd4bdf9eb70247674b8888ccb0128101#8091734ddd4bdf9eb70247674b8888ccb0128101" },
     { name = "nomad-aitoolkit", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-aitoolkit.git?rev=b203f8eb28dc4b6771a39d5c5b7ad3d9d8583ac8#b203f8eb28dc4b6771a39d5c5b7ad3d9d8583ac8" },
