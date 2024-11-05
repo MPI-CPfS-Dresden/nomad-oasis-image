@@ -39,12 +39,12 @@ plugins = [
   "nomad-parser-plugins-atomistic>=1.0",
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
-  "nomad-measurements",
+  "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@0196e9bbfde21d1110ba8e574a961359070b49a2",
   "nomad-material-processing",
   "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@develop",
   "statsmodels",
   "labfolder_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@8091734ddd4bdf9eb70247674b8888ccb0128101",
-  "cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@0e9934c9b5c768b97038f5dd9719e279945d8203",
+  #"cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@0e9934c9b5c768b97038f5dd9719e279945d8203",
   "cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@ca9bb870784576d82257c11d391ef923bdc166f0"]
 
 jupyter = []
