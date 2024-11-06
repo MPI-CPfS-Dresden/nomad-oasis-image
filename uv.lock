@@ -937,6 +937,15 @@ toml = [
 ]
 
 [[package]]
+name = "cpfs-ppms"
+version = "0.1.0"
+source = { git = "https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin?rev=0e9934c9b5c768b97038f5dd9719e279945d8203#0e9934c9b5c768b97038f5dd9719e279945d8203" }
+dependencies = [
+    { name = "nomad-lab" },
+    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
+]
+
+[[package]]
 name = "cpfs-synthesis"
 version = "0.1.0"
 source = { git = "https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin?rev=ca9bb870784576d82257c11d391ef923bdc166f0#ca9bb870784576d82257c11d391ef923bdc166f0" }
@@ -3646,6 +3655,7 @@ dev = [
     { name = "nomad-lab", extra = ["dev", "infrastructure", "parsing"] },
 ]
 plugins = [
+    { name = "cpfs-ppms" },
     { name = "cpfs-synthesis" },
     { name = "eelsdbconverter" },
     { name = "labfolder-plugin" },
@@ -3674,6 +3684,7 @@ plugins = [
 
 [package.metadata]
 requires-dist = [
+    { name = "cpfs-ppms", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin?rev=0e9934c9b5c768b97038f5dd9719e279945d8203#0e9934c9b5c768b97038f5dd9719e279945d8203" },
     { name = "cpfs-synthesis", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin?rev=ca9bb870784576d82257c11d391ef923bdc166f0#ca9bb870784576d82257c11d391ef923bdc166f0" },
     { name = "eelsdbconverter", marker = "extra == 'plugins'", git = "https://github.com/nomad-coe/nomad-parser-eelsdb.git?rev=entry-point" },
     { name = "labfolder-plugin", marker = "extra == 'plugins'", git = "https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin?rev=8091734ddd4bdf9eb70247674b8888ccb0128101#8091734ddd4bdf9eb70247674b8888ccb0128101" },
@@ -3682,7 +3693,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-material-processing", marker = "extra == 'plugins'" },
-    { name = "nomad-measurements", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-measurements?rev=694b481a4a92d53f773e73bd6fe37a00ee39bcf7#694b481a4a92d53f773e73bd6fe37a00ee39bcf7" },
+    { name = "nomad-measurements", marker = "extra == 'plugins'" },
     { name = "nomad-normalizer-plugin-bandstructure", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-normalizer-plugin-dos", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-normalizer-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
@@ -3847,12 +3858,16 @@ wheels = [
 
 [[package]]
 name = "nomad-measurements"
-version = "1.0.2.dev7+g694b481"
-source = { git = "https://github.com/FAIRmat-NFDI/nomad-measurements?rev=694b481a4a92d53f773e73bd6fe37a00ee39bcf7#694b481a4a92d53f773e73bd6fe37a00ee39bcf7" }
+version = "1.0.1"
+source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
 dependencies = [
     { name = "fairmat-readers-xrd" },
     { name = "nomad-lab" },
     { name = "xmltodict" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6d/4b/c512f305ac7e88f5a222837cf29138f0b885aa210dbf0f4976166c60194e/nomad_measurements-1.0.1.tar.gz", hash = "sha256:11b6a7f995be9fc9277ad6dc6794592af570aefff132146be054dd3e6ca90536", size = 7396010 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/de/5b/95ad38deb27995c91f6a94460f0d622ad2f71313d834533133cc05a15638/nomad_measurements-1.0.1-py3-none-any.whl", hash = "sha256:f817acf61927ab26fbf0625265af40a0bb62910511e23a70f2e3409db77b3038", size = 24339 },
 ]
 
 [[package]]
