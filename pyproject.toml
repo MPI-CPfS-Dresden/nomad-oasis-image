@@ -40,13 +40,13 @@ plugins = [
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
   #"nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@694b481a4a92d53f773e73bd6fe37a00ee39bcf7",
-  "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@a64b8142774e6f3ed14a74a6fad24cd6784e5fe3",
+  #"nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@a64b8142774e6f3ed14a74a6fad24cd6784e5fe3",
   "nomad-material-processing",
   "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@develop",
   "statsmodels",
-  #"labfolder_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@8091734ddd4bdf9eb70247674b8888ccb0128101",
-  #"cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@2fd0394e540e10fce5f97b40b04f9799965ddb4f",
-  #"cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@ca9bb870784576d82257c11d391ef923bdc166f0"]
+  "labfolder_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@8091734ddd4bdf9eb70247674b8888ccb0128101",
+  "cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@04aae80a1e914f8e08acef722c18d47fe35df74d",
+  "cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@ca9bb870784576d82257c11d391ef923bdc166f0"]
 
 jupyter = []
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
