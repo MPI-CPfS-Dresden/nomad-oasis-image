@@ -45,7 +45,7 @@ plugins = [
   "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@develop",
   "statsmodels",
   #"labfolder_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@8091734ddd4bdf9eb70247674b8888ccb0128101",
-  "cpfs_ppms @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@04aae80a1e914f8e08acef722c18d47fe35df74d",
+  "nomad_ppms_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@501bcebe42c52642bff18174c965da8f109fd4f9",
   "cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@ca9bb870784576d82257c11d391ef923bdc166f0"]
 
 jupyter = []
