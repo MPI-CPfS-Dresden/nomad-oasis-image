@@ -3692,6 +3692,7 @@ plugins = [
     { name = "nomad-aitoolkit" },
     { name = "nomad-analysis" },
     { name = "nomad-material-processing" },
+    { name = "nomad-measurements" },
     { name = "nomad-normalizer-plugin-bandstructure" },
     { name = "nomad-normalizer-plugin-dos" },
     { name = "nomad-normalizer-plugin-simulation-workflow" },
@@ -3721,6 +3722,7 @@ requires-dist = [
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-material-processing", marker = "extra == 'plugins'" },
+    { name = "nomad-measurements", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-measurements?rev=f779b6bd47ac9ecb0ce162651b2afd756080dc6f" },
     { name = "nomad-normalizer-plugin-bandstructure", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-normalizer-plugin-dos", marker = "extra == 'plugins'", specifier = ">=1.0" },
     { name = "nomad-normalizer-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0" },
@@ -3890,18 +3892,14 @@ wheels = [
 
 [[package]]
 name = "nomad-measurements"
-version = "1.1.0"
-source = { registry = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple" }
+version = "1.1.1.dev8+gf779b6b"
+source = { git = "https://github.com/FAIRmat-NFDI/nomad-measurements?rev=f779b6bd47ac9ecb0ce162651b2afd756080dc6f#f779b6bd47ac9ecb0ce162651b2afd756080dc6f" }
 dependencies = [
     { name = "fairmat-readers-transmission" },
     { name = "fairmat-readers-xrd" },
     { name = "nomad-lab" },
     { name = "nomad-material-processing" },
     { name = "xmltodict" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/74/ad/dcdae4d0dcb2b881cf95d7fad74ea28d0191fa236e99bccc91818269be34/nomad_measurements-1.1.0.tar.gz", hash = "sha256:6ab8528d430a12980da0cd437603dc1250ccb5d5bacb6721d0a4b18c99559a79", size = 8463310 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/df/a9/8e2ea39d3beab6c055164adef66b29c65fb664fa531897e7a389dc695434/nomad_measurements-1.1.0-py3-none-any.whl", hash = "sha256:52ba13172831d79028d5253732f58b5a32d5d83e1fa936e835e8709f0ef713a0", size = 47585 },
 ]
 
 [[package]]
