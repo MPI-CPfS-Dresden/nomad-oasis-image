@@ -46,7 +46,8 @@ plugins = [
   "statsmodels",
   #"labfolder_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@8091734ddd4bdf9eb70247674b8888ccb0128101",
   "nomad_ppms_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@501bcebe42c52642bff18174c965da8f109fd4f9",
-  "cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@ca9bb870784576d82257c11d391ef923bdc166f0"]
+  "cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@b428340f7464476c521b25d336f4a83bdb000a46",
+  "cpfs-preparation-log @ git+https://github.com/MPI-CPfS-Dresden/cpfs-preparation-log@626a6280264a48da02614002efe4d5c1f22c2481" ]
 
 jupyter = []
 dev = ["nomad-lab[parsing, infrastructure, dev]>=1.3.4"]
