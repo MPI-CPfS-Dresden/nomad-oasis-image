@@ -44,7 +44,7 @@ plugins = [
   "nomad-material-processing",
   "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@develop",
   "statsmodels",
-  "labfolder_general @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@015eab3d973a64d75990cb1ddab1eac0044fa0cd",
+ # "labfolder_general @ git+https://github.com/MPI-CPfS-Dresden/nomad-labfolder-plugin@015eab3d973a64d75990cb1ddab1eac0044fa0cd",
   "nomad_ppms_plugin @ git+https://github.com/MPI-CPfS-Dresden/nomad-ppms-plugin@72cf19ebf7c84488afc2903797433de5e9998fc1",
   "cpfs_synthesis @ git+https://github.com/MPI-CPfS-Dresden/nomad-cpfs-synthesis-plugin@b428340f7464476c521b25d336f4a83bdb000a46",
   "cpfs-preparation-log @ git+https://github.com/MPI-CPfS-Dresden/cpfs-preparation-log@25342f71ca8edf3e5781c7b13918eb0c6b7543fc" ]
