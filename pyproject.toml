@@ -41,7 +41,7 @@ plugins = [
   "nomad-parser-plugins-workflow>=1.0",
   "nomad-parser-plugins-database>=1.0",
   #"nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@694b481a4a92d53f773e73bd6fe37a00ee39bcf7",
-  "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@945eff14b5378110419f7f0e1e2fb1e846376d89",
+  "nomad-measurements @ git+https://github.com/FAIRmat-NFDI/nomad-measurements@60d0bb5178c783fb33878788dd3871329be68e42",
   "nomad-material-processing",
   "nomad-analysis @ git+https://github.com/FAIRmat-NFDI/nomad-analysis.git@develop",
   "statsmodels",
